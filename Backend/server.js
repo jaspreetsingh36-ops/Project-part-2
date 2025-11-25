@@ -1,4 +1,8 @@
-﻿// Backend/server.js - AutoRent backend (MongoDB only, Frontend folder one level up)
+require("dotenv").config();
+
+const MONGODB_URI = process.env.MONGODB_URI;
+const JWT_SECRET = process.env.JWT_SECRET;
+
 
 const express = require('express');
 const mongoose = require('mongoose');
