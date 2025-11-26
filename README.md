@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="images/logo.jpg" alt="AutoRent Logo" width="200">
-</p>
+<p align="center"> <img src="Frontend/images/logo.jpg" alt="AutoRent Logo" width="200"> </p><h3 align="center">Premium Car Rental Platform</h3><p align="center"> <strong>Live Website:</strong> <a href="https://autorent-k8dr.onrender.com">https://autorent-k8dr.onrender.com</a> </p><p align="center"> A modern, full-stack car rental management system built with Node.js, Express, MongoDB, and vanilla JavaScript </p>
 
 # AutoRent - Full Stack Car Rental System
 
@@ -15,6 +13,25 @@ on Render.
 ------------------------------------------------------------------------
 
 ## Features
+- Authentication System
+- User registration and login
+- JWT token-based authentication
+- Protected routes for car management
+- Session persistence
+
+## Car Management
+- Browse Cars: View all available vehicles
+- Add New Cars: Secure form with validation
+- Edit Existing Cars: Update car details
+- Delete Cars: Remove vehicles from inventory
+- Real-time Status: Available, Rented, Maintenance status tracking
+### User Experience
+- Responsive design for all devices
+- Modern dark theme UI
+- Interactive navigation
+- Real-time form validation
+- Loading states and error handling
+
 
 ### Frontend
 
@@ -61,18 +78,23 @@ on Render.
 ------------------------------------------------------------------------
 
 ## Project Structure
-
-    /
-    ├── index.html
-    ├── cars.html
-    ├── add-car.html
-    ├── edit-car.html
-    ├── script.js
-    ├── style.css
-    ├── server.js
-    ├── package.json
-    ├── images/
-    └── README.md
+INFR3120-Fall25-Project-main/
+├── Backend/
+│   └── server.js          # Main server file
+├── Frontend/
+│   ├── index.html               # Homepage
+│   ├── cars.html                # Cars management page
+│   ├── add-car.html             # Add car form
+│   ├── edit-car.html            # Edit car form
+│   ├── login.html               # User login
+│   ├── register.html            # User registration
+│   ├── style.css                # Main stylesheet
+│   ├── script.js                # Frontend JavaScript
+│   ├── auth.js                  # Authentication logic
+│   └── images/
+│       └── logo.jpg             # Application logo
+├── package.json                 # Project dependencies
+└── README.md                    # Project documentation
 
 ------------------------------------------------------------------------
 
@@ -81,12 +103,14 @@ on Render.
 ### 1. Clone the repository
 
 ``` bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/jaspreet.singh36-ops/INFR3120-Fall25-Project-main.git
+cd INFR3120-Fall25-Project-main
 ```
 
 ### 2. Install dependencies
 
 ``` bash
+cd Backend && 
 npm install
 ```
 
@@ -97,6 +121,7 @@ npm install
 ### 4. Start the backend server
 
 ``` bash
+
 npm start
 ```
 
@@ -121,34 +146,6 @@ Visit:
 | DELETE | /api/cars/:id | Delete car |
 
 ------------------------------------------------------------------------
-
-## Usage
-
-### Add a Car
-
-1.  Navigate to **Add Car**
-2.  Fill out the form
-3.  Submit -> Saves to MongoDB
-
-### Edit a Car
-
-1.  Click **Edit** on any car
-2.  Change fields
-3.  Submit -> Updates in database
-
-### Delete a Car
-
-1.  Click **Delete**
-2.  Confirm
-3.  Car is removed from MongoDB
-
-### View Cars
-
--   Homepage -> only available cars\
--   Cars page -> full inventory
-
-------------------------------------------------------------------------
-
 ## Current Limitations
 
 -   No authentication
@@ -160,39 +157,82 @@ Visit:
 ------------------------------------------------------------------------
 
 ##  Future Enhancements
-
--   User accounts + authentication
--   Booking & reservation system
--   Price calculator
--   Car image upload feature
--   Search & filter
--   Email notifications
--   Dashboard with analytics
+-   User profile management
+-  Car image upload functionality
+-  Advanced search and filtering
+-  Booking reservation system
+-  Email notifications
+-  Payment integration
+-  Mobile application
+-  Admin dashboard with analytics
 
 ------------------------------------------------------------------------
 
 ## Authors
 
--   Jaspreet Singh
--   Shivang Amin
+-   Jaspreet Singh\
+-   Shivang Amin\
 -   Thmisha Rasanathan
 
 ------------------------------------------------------------------------
 
 ## Acknowledgments
 
--   INFR3120 Course Materials\
--   MongoDB Atlas\
--   Render Cloud Hosting\
--   MDN Web Docs\
--   W3Schools
--   https://www.youtube.com/watch?v=vkCgvEVTIgw&t
--   OpenAI.  ChatGPT https://chat.openai.com/
+-  INFR3120 Course Materials
+- Educational Resources
+- Ontario Tech University - Course materials and guidance
+- MDN Web Docs - Web development references
+- W3Schools - Tutorials and examples
+-   ## 📚 References
+
+1. **MongoDB Documentation**
+   - MongoDB, Inc. (2024). *MongoDB Node.js Driver Documentation*. 
+   - Retrieved from: https://www.mongodb.com/docs/drivers/node/current/
+   - *Reference for: MongoDB integration, Mongoose ODM, database operations*
+
+2. **Express.js Framework**
+   - Express.js. (2024). *Express.js Official Documentation*.
+   - Retrieved from: https://expressjs.com/
+   - *Reference for: REST API development, middleware configuration, routing*
+
+3. **MDN Web Docs - Fetch API**
+   - Mozilla Developer Network. (2024). *Using the Fetch API*.
+   - Retrieved from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+   - *Reference for: Frontend-backend communication, HTTP requests, error handling*
+
+4. **JWT Authentication**
+   - IETF. (2015). *JSON Web Token (JWT) RFC 7519*.
+   - Retrieved from: https://tools.ietf.org/html/rfc7519
+   - *Reference for: Authentication system, token-based security, user sessions*
+
+5. **Render Deployment Documentation**
+   - Render. (2024). *Web Services Documentation*.
+   - Retrieved from: https://render.com/docs/web-services
+   - *Reference for: Cloud deployment, environment configuration, production hosting*
+
+6. **OpenAI ChatGPT**
+   - OpenAI. (2024). *ChatGPT AI Assistant*.
+   - Retrieved from: https://chat.openai.com/
+   - *Reference for: Code debugging, development assistance, technical guidance*
+
+7. **Web Development Tutorials**
+   - CodeWithHarry. (2023). *MongoDB Connection with Node.js*.
+   - Retrieved from: https://www.youtube.com/watch?v=dxLNUXMtVhU
+   - *Reference for: Database connectivity, backend setup, API development*
+
+8. **Full Stack Development Guide**
+   - Thapa Technical. (2023). *MERN Stack Complete Guide*.
+   - Retrieved from: https://www.youtube.com/watch?v=BLl32FvcdVM
+   - *Reference for: Full stack architecture, project structure, deployment strategies*
 
 ------------------------------------------------------------------------
 
 ## License
 
-Created for academic purposes under\
-**INFR3120 - Web & Scripting Programming (OntarioTech University)**.
+This project was developed for academic purposes as part of the INFR3120 - Web & Scripting Programming course at Ontario Tech University. 
+*INFR3120 - Web & Scripting Programming • Ontario Tech University • Fall 2025*
+
+</div>
+
+
 
