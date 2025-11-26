@@ -1,9 +1,6 @@
-<p align="center"> <img src="Frontend/images/logo.jpg" alt="AutoRent Logo" width="200"> </p><h3 align="center">Premium Car Rental Platform</h3><p align="center"> <strong>Live Website:</strong> <a href="https://autorent-k8dr.onrender.com">https://autorent-k8dr.onrender.com</a> </p><p align="center"> A modern, full-stack car rental management system built with Node.js, Express, MongoDB, and vanilla JavaScript </p>
+<p align="center"> <img src="Frontend/images/logo.JPG" alt="AutoRent Logo" width="200"> </p><h3 align="center">Premium Car Rental Platform</h3><p align="center"> <strong>Live Website:</strong> <a href="https://autorent-k8dr.onrender.com">https://autorent-k8dr.onrender.com</a> </p><p align="center"> A modern, full-stack car rental management system built with Node.js, Express, MongoDB, and vanilla JavaScript </p>
 
 # AutoRent - Full Stack Car Rental System
-
-Live Website: https://autorent-k8dr.onrender.com
-
 AutoRent a car rental management system built for the
 INFR3120 Web & Scripting Programming course. This platform allows users
 to browse, add, edit, and manage rental vehicles using a responsive
